@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+            fieldset{
+                width: 500px;
+                background-color: darkgray;
+                margin-top: 50px;
+                padding: 10px;
+                margin-left: 500px;
+                margin-right: 645px;
+                box-shadow: 2px 2px 4px white;
+            }
+            body{
+                background: black;
+            }
+            input{
+                width: 500px;
+                margin-left: 9px;
+                height: 50px;
+                box-shadow: 2px 2px 20px black;
+            }
+            .operator{
+                display: grid;
+                grid-template-columns: 25% 25% 25% 25%;
+                padding: 10px;
+                box-shadow: 2px 2px 2px white;
+            }
+            .operator div {
+                background-color: #f1f1f1;
+                border: 1px solid black;
+                padding: 10px;
+                font-size: 30px;
+                text-align: center;
+            }
+            .calcu{
+                border-color: gray;
+                border-radius: 5px;
+            }
+            #calcu-math{
+                background-color: black;
+                color: white;
+                border-color: gray;
+                border-radius: 5px;
+            }
+            #calcu-clear{
+                border-color: gray;
+                background-color: red;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <div class="display-usertext">
+                <input type="text">
+            </div>
+            <div class=operator>
+                <div class="calcu">7</div>
+                <div class="calcu">8</div>
+                <div class="calcu">9</div>
+                <div id="calcu-math">+</div>
+
+                <div class="calcu">4</div>
+                <div class="calcu">5</div>
+                <div class="calcu">6</div>
+                <div id="calcu-math">-</div>
+
+                <div class="calcu">1</div>
+                <div class="calcu">2</div>
+                <div class="calcu">3</div>
+
+                <div id="calcu-math">X</div>
+                <div id="calcu-clear">C</div>
+                <div class="calcu">0</div>
+                <div id="calcu-math">=</div>
+                <div id="calcu-math">/</div>
+                
+            </div>
+        </fieldset>
+    </body>
+</html>
