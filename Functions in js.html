@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Functions in Java Scripts</title>
+    </head>
+    <body>
+        <h1>Functions in Java Scripts</h1>
+
+        <script>
+            // normal function
+            // function sum(){
+            //     return "Prakruthi";
+            // };
+
+            // document.write(sum())
+
+            // Para or auguments functions
+
+            function sum1(a,b){
+                return a+b;
+
+            };
+            document.write(sum1(100,200))
+
+            function sum2(a=200,b=100){
+                return a+b;
+
+            };
+            document.write(sum2())
+
+            //arrow fuction
+            let sum3=() => {
+                return "Prakruthi"
+
+            };
+            document.write(sum3()+"<br>");
+
+            // with argument 
+            let sum4=(a,b) => {
+                return a+b
+            };
+            document.write(sum4(20,10)+"<br>");
+
+            // with argument with value
+            let sum5=(a=200,b=100) => {
+                return a+b
+            };
+            document.write(sum5()+"<br");
+
+
+
+        </script>
+    </body>
