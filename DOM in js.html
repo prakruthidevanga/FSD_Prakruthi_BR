@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Document object Model</title>
+    </head>
+    <body>
+        <h1>Document object Model</h1>
+        <p id="dom">
+            Welcome to DOM
+        </p>
+
+        <button onclick="Change()">Click Me</button>
+
+        <p id="Myself">
+            Introduction about ME
+        </p>
+        <button onclick="Change()">Click button</button>
+
+        <script>
+            function Change(){
+
+                document.getElementById('dom').style.color="red";
+
+                document.getElementById('Myself').textContent="Good morning everyone.My name is Prakruthi BR. I am a student with a strong interest in computer science and cloud technologies. I enjoy learning new concepts, especially in areas like software engineering, data management, and cloud platforms. I am always eager to improve my skills and gain practical knowledge. Thank you."
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Arrow Functions</title>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <script>
+            let a=200;
+            let b=300;
+
+            let addition=(a,b)=>{
+                return a+b + "<br>";
+            };
+
+            document.write(`Addition of A =  ${a}  and  B =  ${b}: ` +  addition(a,b));
+
+
+            let subraction=(a,b)=>{
+                return a-b + "<br>";
+            };
+
+            document.write(`Subraction of A =  ${a}  and   B =  ${b}: ` + subraction(a,b));
+
+            let multiplication=(a,b)=>{
+                return a*b + "<br>";
+            };
+
+            document.write(`Multiplication of A = ${a} and  B = ${b}: ` + multiplication(a,b));
+
+            let division=(a,b)=>{
+                
+                return a/b + "<br>";
+            };
+            document.write(`Division of A = ${a}  and  B = ${b}: ` + division(a,b));
+
+            let modulus=(a,b)=>{
+                return a%b + "<br>";
+            };
+
+            document.write(`Modulus of A =  ${a}  and  B =  ${b}: ` + modulus(a,b));
+        </script>
+
+        <h1>Marriage Eligibility</h1>
+
+        <script>
+
+            let age= 18;
+            let gender = "female"
+            let Marriage=(age, gender)=>{
+
+                if (gender=="male" && age>=21){
+                    return "Eligible for marriage";
+                }
+                else if (gender=="female" && age>=18){
+                    return "Eligible for marriage";
+                }
+                else if(age<18){
+                    return "Not Eligible for marriage"
+                }
+            }
+
+            document.write(` ${age} and ${gender} are ` + Marriage(age,gender));
+        </script>
+    </body>
+</html>
