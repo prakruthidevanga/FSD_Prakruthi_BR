@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <title>Multi media</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #f2f2f2;
+            }
+            h1 {
+                text-align: center;
+                font-size: 30px
+            }
+            h2{
+                font-size: 35px
+            }
+            .logo{
+               width: 130px;
+               height: 15%;
+               margin-left: 690px;
+            }
+            .nav {
+                margin-top: 20px;
+                background-color: #2c3e50;
+                color: white;
+                display: flex;
+                border-radius: 5px;  
+            }
+            .nav ul {
+                list-style-type: none; /* removes bullets */
+                display: flex;
+                gap: 30px; /* spacing between items */
+                margin-left:70%;
+                padding: 0;
+            }
+            .nav li {
+                font-size: 20px;
+                text-decoration: none;
+                color: white;
+            }
+            img{
+                margin-right: 100px;
+                width: 290px;
+                height:290px;
+                border-radius: 10px;
+                box-shadow: 1px 1px 2px 2px black;
+            }
+            .Winter{
+                margin-left: 20.5%;
+                margin-top: 20px;
+
+            }
+            .Summer{
+                margin-left: 10%;
+            }
+            video{
+                margin-left: 150px;
+                box-shadow:0px 0px 5px 5px #2c3e50;
+            }
+            img:hover{
+                color: #2c3e50;
+            }
+            .sum{
+                color: rgb(100, 87, 5);
+                font-size: 20px;
+            }
+            .rain{
+                color: rgb(28, 28, 226);
+                font-size: 20px;
+            }
+            .autu{
+                color: rgb(221, 75, 7);
+                font-size: 20px;
+            }
+            .win{
+                color: rgb(88, 213, 248);
+                font-size: 20px;
+            }
+            .spr{
+                color: palevioletred;
+                font-size: 20px;
+            }
+            .Content{
+                font-size: 20px;
+                font-size: 20px;
+            }
+            p{
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Seasons </h1>
+        <img class="logo" src="./logo for seasons.jpeg">
+        <div class="nav">
+            <ul> 
+                <li>Home</li>
+                <li>Summer</li>
+                <li>Rainy</li>
+                <li>Autumn</li>
+                <li>Winter</li>
+                <li>Spring</li>
+            </ul>
+        </div>
+        <h2>Seasons Video 📽️</h2>
+        <video src="./seasons1.mp4" width="80%" height="550px"  loop autoplay muted></video>
+        <div>
+            <h2>Seasons Images 📷</h2>
+            <img class="Summer" src="./Summer.jpeg" onclick="showSeason('Summer')">
+
+            <img class="Rain" src="./Rain.jpeg" onclick="showSeason('Rainy')">
+
+            <img class="Autunm"src="./Autunm.jpeg" onclick="showSeason('Autumn')">
+
+            <img class="Winter" src="./winter.jpeg" onclick="showSeason('Winter')">
+
+            <img class="Spring" src="./Spring.jpeg" onclick="showSeason('Spring')">
+
+        </div>
+
+        <audio src="C:\Users\prakr_rewvga6\Downloads\sonican-background-music-new-age-nature-465069.mp3" controls loop></audio>
+
+        <h2>Content:</h2>
+        <div id="season-content">
+            <p class="Content">Seasons are different periods of the year that bring changes in weather and climate. They occur due to the Earth’s rotation and its tilted axis while revolving around the Sun. The four main seasons are ☀️ summer, ❄️ winter, 🌻 spring, 🌧️ rainy and 🍁 autumn. Each season affects temperature, rainfall, and daily life activities. Seasons also play an important role in agriculture and natural balance.</p>
+        </div>
+
+        <script>
+            function showSeason(season){
+                let Content = document.getElementById("season-content");
+
+                if(season === "Summer"){
+                    Content.innerHTML="<h3 class='sum'>☀️ Summer:</h3> <p> Starts in March and ends in June. Summer is hot and sunny. People wear light clothes and enjoy cold drinks. </p>";
+                }else if(season==="Rainy"){
+                    Content.innerHTML="<h3 class='rain'> 🌧️ Rainy:</h3> <p>Starts in June and ends in September. This season brings rainfall and greenery. Farmers depend on this season. </p>";
+                }
+                else if(season==="Autumn"){
+                    Content.innerHTML="<h3 class='autu'>  🍁 Autumn:</h3> <p>Starts in October and ends in November, leaves fall and weather becomes pleasant and cool. </p>";
+                }
+                else if(season==="Winter"){
+                    Content.innerHTML="<h3 class='win'>  ❄️ Winter:</h3> <p> Starts in December and ends in February. Weather is cold. People wear woollen clothes. </p>";
+                }
+                else if(season==="Spring"){
+                    Content.innerHTML="<h3 class='spr'>  🌻 Spring:</h3> <p> Stats in February and ends in March. Flowers Bloom and weather is fresh and enjoyable. </p>";
+                }
+            }
+        </script>   
+    </body>
+</html>
