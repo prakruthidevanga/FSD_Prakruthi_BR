@@ -1,0 +1,138 @@
+/* h1{
+    text-align: center;
+} */
+
+/* button{
+    margin-left: 230px;
+    background-color: rgb(66, 80, 41);
+    color: white;
+    font-size: 15px;
+}
+.div{
+    background-color: rgba(201, 112, 201, 0.916);
+    padding: 10px;
+    width: 550px;
+}
+span{
+    color: green;
+
+}*/
+/* p{
+    text-align: center;
+}
+div{
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 2px 5px;
+    width: 500px;
+    padding-bottom: 10px;
+} */ 
+
+body{
+    background: url(./keyboard-stationery-flat-lay.jpg);
+    background-size: cover;
+}
+div {
+    width: 300px;
+    margin: 100px auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    
+    
+    }
+
+p {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        color: white;
+        background-color: #333;
+    }
+
+button {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        cursor: pointer;
+        background-color: black;
+        font-size: 20px;
+    }
+.butt1{
+    background-color: green;
+}
+.butt2{
+    background-color: red;
+}
+.butt3{
+    background-color: gray;
+}
+.box{
+    margin-top: 150px;
+    margin-left: -10% ;
+    width: 270px;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: rgba(193, 192, 192, 0.463);
+    text-align: center;
+}
+
+/* body{
+    background: url(./youtude.png);
+    background-size:cover ;  
+    
+}
+form{
+    text-align: center;
+    margin-left: 510px;
+    margin-right: 580px;
+    padding-top: 150px;
+    color: white;   
+    
+}
+fieldset{
+    background-color: rgb(98, 97, 97,0.5);
+    border-radius: 10px;
+}
+.password{
+    text-align: left;
+}
+.username{
+    text-align: left;
+}
+.options{
+    display: flex;
+    justify-content: left;
+}
+
+.forget-password{
+    text-align: right;
+    margin-left: 150px;
+    
+}
+button{
+    width: 200px;
+    height: 40px;
+    border-radius:10px;
+    background-color: white;
+    color: red;
+    box-shadow: 1px 1px 5px white;
+}
+img{
+    width: 50px;
+}
+h1{
+    color: white;
+    font-size: 50px;
+}
+fieldset{
+    background-color: rgba(15, 14, 14, 0.29);
+    border-radius: 16px;
+    border: 1px solid rgb(225, 225, 225,0.3);
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.3);
+} */
