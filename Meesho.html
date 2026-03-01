@@ -1,0 +1,313 @@
+<html>
+    <head>
+        <title>Meshoo</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: white;
+                color: black;
+            }
+            .head{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+                padding-left: 20px ;
+            }
+            .name{
+                font-size: 28px;
+                font-weight: bold;
+                color: #6b1d75;
+            }
+            .searchbar{
+                width: 500px;
+                font-size: 15px;
+                background-color: white;
+                padding: 10px 15px;
+            }
+            input{
+                width: 450px;
+                height: 40px;
+                padding-left: 15px;
+                margin-right: 100px;
+                border-radius: 10px;
+            }
+            .items-involved{
+                display: flex;
+                list-style-type: none;
+                gap: 20px;
+                align-items: center;
+                font-size: 13px;
+                font-weight: 500;
+            }
+            .items li{
+               gap: 25px;
+               font-size: 13px;
+               font-weight: 500; 
+            }
+            .carts{
+                margin-right: 5px;
+            }
+            .navbar{
+                display: flex;
+                list-style-type: none;
+                gap: 20px;
+                font-size: 12px;
+                padding-left: 30px;
+                margin-top: 15px;
+                font-weight: 450;
+            }
+            .nextstep{
+                position: relative;
+                margin: 15px;
+                width: 100%;
+                display: flex;
+            }
+            .img1{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+            }
+            .texts{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                padding-right: 60px;
+            }
+            .texts .text1{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                color: white;
+                text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            }
+            .text1 h2{
+                font-size: 48px;
+                font-weight: 700;
+                margin-bottom: 15px;
+                line-height: 1.1;
+            }
+            .text1 p{
+                font-size: 32px;
+                font-weight: 600;
+                margin-bottom: 25px;
+                line-height: 1.1;
+            }
+            .text1 button{
+                padding: 14px 40px;
+                background-color: white;
+                color: #a91079;
+                border: none;
+                border-radius: 8px;
+                font-weight: 700;
+                font-size: 16px;
+                cursor: pointer;
+                transition: transform 0.2s ease;
+            }
+            .features{
+                display: flex;
+                justify-content: center;
+                gap: 100px;
+                padding: 15px;
+                background: rgb(242, 242, 242);
+                font-size: 15px;
+                
+            }
+            
+            .products-bar{
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(130px, 1fr));
+                justify-content: center;
+                padding: 0px 20px;
+                margin: 40px auto;
+            }
+            .product-bin{
+                text-align: center;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+            }
+            .product-bin img{
+                width: 80%;
+                height: 80%;
+                object-fit: contain;
+                transition: 0.3s;
+            }
+            .product-bin img:hover{
+                transform: scale(1.05);
+            }
+            .product-bin p{
+                margin-top: 12px;
+                font-size: 15px;
+                font-weight: 600;
+            }
+            .last-part{
+                position: relative;
+                height: 620px;
+                background: url(/gold1.webp);
+                background-size: cover;
+            }
+            .rigth-part{
+                position: absolute;
+                right: 80px;
+                top: 50%;
+                transform: translateY(-50%);
+                display: grid;
+                grid-template-columns: repeat(2, 160px);
+                gap: 25px;
+            }
+            .gold-images{
+                text-align: center;
+                transition: 0.3s ease;
+            }
+            .gold-images img{
+                width: 100%;
+                object-fit: cover;
+                border-radius: 14px;
+            }
+            .inside-button button{
+               padding: 14px 40px;
+               color: #e8c36a;
+               background-color: rgba(165, 42, 42, 0.122);
+               font-size: 20px;
+               width: 190px;
+               margin-top: 480px;
+               border: 1px solid #e8c36a;
+               border-radius: 5px;
+               margin-left: 195px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="head">
+            <div class="name">
+                <h1>meesho</h1>
+            </div>
+            <div class="searchbar">
+                <input  type="text" placeholder="🔍 Try Saree, Kurti or Search by Product code">
+            </div>
+            <div class="items-involved">
+                <li>Become a Supplier |</li>
+                <li>Investor Relations |</li>
+                <li>👤 Profile</li>
+                <li class="carts">🛒 Cart (0)</li>
+            </div>
+        </div><hr>
+
+        <div class="navbar">
+            <li>Popular</li>
+            <li>Kurti, Saree & Lehenga</li>
+            <li>Women Western</li>
+            <li>Lingerie</li>
+            <li>Men</li>
+            <li>Kids & Toys</li>
+            <li>Home & Kitchen</li>
+            <li>Beauty & Health</li>
+            <li>Jewellery & Accessories</li>
+            <li>Bags & Footwear</li>
+            <li>Electronics</li>
+            <li>Watches</li>
+            <li>Sports & Fitness</li>
+            <li>Car & Motorbike</li>
+            <li>Office Supplies & Stationary</li>
+        </div>
+
+        <div class="nextstep">
+            <div class="img1">
+                <img src="/img-1.webp" alt="">
+            </div>
+            <div class="texts">
+                <div class="text1">
+                <h2>Smart Shopping</h2>
+                <p>Trusted by Millions</p><br>
+                <button>Shop Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class ="features">
+                <p>🎁 7 Days Easy Return</p>
+                <span>|</span>
+                <p>🚚 Cash on Delivery</p>
+                <span>|</span>
+                <p>💰 Lowest Prices</p>
+        </div>
+
+        <div class="products-bar">
+            <div class="product-bin">
+                <img src="/image2.webp">
+                <p>Ethnic Wear</p>
+            </div>
+
+            <div class="product-bin">
+                <img src="/image3.webp">
+                <p>Western Dresses</p>
+            </div>
+            
+            <div class="product-bin">
+                <img src="/iamge4.webp">
+                <p>Menswear</p>
+            </div>
+
+            <div class="product-bin">
+                <img src="/image5.webp">
+                <p>Footwear</p>
+            </div>
+
+            <div class="product-bin">
+                <img src="/image6.webp">
+                <p>Home Decor</p>
+            </div>
+
+            <div class="product-bin">
+                <img src="/image7.webp">
+                <p>Beauty</p>
+            </div>
+
+            <div class="product-bin">
+                <img src="/image8.webp">
+                <p>Accessories</p>
+            </div>
+
+            <div class="product-bin">
+                <img src="./iamge9.webp">
+                <p>Grocery</p>
+            </div>
+        </div>
+
+        <div class="last-part">
+            <div class="inside-button">
+                <button class="btn-gold">Shop Now</button>
+            </div>
+            <div class="rigth-part">
+                <div class="gold-images">
+                    <img src="/gold2.webp">
+                </div>
+
+                <div class="gold-images">
+                    <img src="/gold3.webp">
+                </div>
+
+                <div class="gold-images">
+                    <img src="/gold4.webp">
+                </div>
+
+                <div class="gold-images">
+                    <img src="/gold5.webp">
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
