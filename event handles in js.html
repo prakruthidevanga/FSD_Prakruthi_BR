@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>Events Handles in JS</title>
+        <style>
+            body{
+                text-align: center;
+                background: url(./login_page_with_background.jpeg);
+            }
+            div{
+                text-align: center;
+                background-color: white;
+                width: 490px;
+                height: 200px;
+                margin-left: 490px;
+                margin-top: 220px;
+                border-radius: 10px;
+                padding-top: 20px;
+                padding-bottom: 70px;
+                box-shadow: 0px 0px 10px 10px black;
+            }
+            h1{
+                
+                font-family: Arial, Helvetica, sans-serif;
+
+            }
+            .success{
+                color: green;
+                width: 80px;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                border-radius: 5px;
+            }
+            .faild{
+                color: red;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                border-radius: 5px;
+            }
+            label{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+            }
+            input{
+                padding: 6px;
+            }
+            button{
+                color: white;
+                background-color: gray;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 10px;
+                box-shadow: 1px 1px 1px 1px black;
+            }
+            button:hover{
+                color: white;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        <h1>Login</h1>
+        <label><b>Username:</b></label>
+        <input type="text" id="username" placeholder="Enter your Username" required><br><br>
+        <label><b>Password:</b></label>
+        <input type="password" id="password" placeholder="Enter your password" required><br><br>
+        <button onclick="Event()">Login</button>
+        <p id="result"></p>
+        </div>
+        <script>
+            function Event(){
+                // alert("Hello Prakruthi");
+
+                var username=document.getElementById("username").value;
+
+                var password=document.getElementById("password").value;
+
+                if(username=="Prakruthi" && password=="12345678910"){
+                    // document.writeln("Login Successfully");
+                    document.getElementById("result").innerHTML= "<span class=success>"+"Login Successfully !! ✅"+"</span>";
+                }else{
+                    // document.writeln("Login Faild");
+                    document.getElementById("result").innerHTML= "<span class=faild>"+"Login Faild ?? ⚠️"+"</span>";
+                }
+            }
+        </script>
+    </body>
+</html>
