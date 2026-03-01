@@ -1,0 +1,193 @@
+<html>
+<head>
+    <title>Grade System</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f2f2;
+        }
+        div{
+            text-align: center;
+            width: 360px;
+            margin: 70px;
+            background-color: rgb(88, 213, 248);
+            padding: 15px;
+            box-shadow: 0px 0px 10px gray;
+            
+        }
+        h1{
+            text-align: center;
+            color:navy
+        }
+        input{
+            width: 95%;
+            padding: 6px;
+            margin: 6px;
+        }
+        button{
+            padding: 12px;
+            margin: 6px;
+            border: none;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+        }
+        label{
+            font-size: 15px;
+            color:black;
+        }
+        fieldset{
+            background-color: white;
+        }
+        .stud{
+            font-size: 20px;
+            text-decoration: underline;
+            color:rgb(6, 146, 201)
+        }
+        p{
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+<div>
+    <h1>Student Marks Grading System</h1>
+    <label><b>Enter Student Register No: </b></label>
+    <input type="number" placeholder="Enter ur reg no" required id="reg_no">
+
+    <label><b>Enter Student Marks: </b></label>
+    <input type="number" placeholder="Enter ur marks" required id="marks">
+
+    <button onclick="Show_Grade()">Submit</button>
+    <button onclick="restart()">Refresh</button>
+
+    <fieldset><P class="stud">Student-Proflie</P>
+        <p id="pname"></p>
+        <p id="preg_no"></p>
+        <p id="psem"></p>
+        <p id="pcourse"></p>
+        <p id="pgrade"></p>
+        <p id="presult"></p>
+    </fieldset>
+    
+</div>
+
+<script>
+
+    let Students = {
+        "12345678901":{Student_Name:"Prakruthi", Semester:"4th", Course:"BCA"},
+        "12345678902":{Student_Name:"Keerthi", Semester:"4th", Course:"BCA"},
+        "12345678903":{Student_Name:"Pragathi", Semester:"4th", Course:"BCA"},
+        "12345678904":{Student_Name:"Vinutha", Semester:"4th", Course:"BCA"},
+        "12345678905":{Student_Name:"Geetha", Semester:"4th", Course:"BCA"},
+        "12345678906":{Student_Name:"Shuchith", Semester:"4th", Course:"BCA"},
+        "12345678907":{Student_Name:"Kushal", Semester:"4th", Course:"BCA"},
+        "12345678908":{Student_Name:"Jayath", Semester:"4th", Course:"BCA"},
+        "12345678909":{Student_Name:"Alfa Mizra", Semester:"4th", Course:"BCA"},
+        "12345678910":{Student_Name:"Yeshwanth", Semester:"4th", Course:"BCA"},
+        "12345678911":{Student_Name:"Vijya", Semester:"4th",Course:"BCA"}
+    };
+    function Show_Grade(){
+
+        let reg_no = document.getElementById("reg_no").value;
+
+        let Student_Marks= Number(document.getElementById("marks").value);
+
+         let Student=Students[reg_no];
+          if(!Student){
+            document.getElementById("pname").textContent="Student Name: ";
+
+            document.getElementById("preg_no").textContent="Register No: ";
+            
+            document.getElementById("psem").textContent="Semester: ";
+
+            document.getElementById("pcourse").textContent="Course: ";
+
+            document.getElementById("pgrade").textContent="Grade: ";
+
+            document.getElementById("presult").textContent="Result: ";
+
+            return;
+          }
+
+        let Result="";
+
+        let Student_Grade="";
+
+        if(Student_Marks>=95){
+            Student_Grade="O";
+            Result="Pass";
+        } 
+        else if(Student_Marks>=90){
+            Student_Grade="A+";
+            Result="Pass";
+        }
+        else if(Student_Marks>=85){
+            Student_Grade="A";
+            Result="Pass";
+        }
+        else if(Student_Marks>=80){
+            Student_Grade="B+";
+            Result="Pass";
+        } 
+        else if(Student_Marks>=75){
+            Student_Grade="B";
+            Result="Pass";
+        }
+        else if(Student_Marks>=70){
+            Student_Grade="C";
+            Result="Pass";
+        }
+        else if(Student_Marks>=65){
+            Student_Grade="D";
+            Result="Pass";
+        }
+        else if(Student_Marks>=50){
+            Student_Grade="E";
+            Result="Pass";
+        }
+        else{
+            Student_Grade="FAIL";
+            Result="Fail";
+        }
+
+        document.getElementById("pname").textContent="Student Name: "+Student.Student_Name;
+
+        document.getElementById("preg_no").textContent="Register No: "+reg_no;
+            
+        document.getElementById("psem").textContent="Semester: "+Student.Semester;
+
+        document.getElementById("pcourse").textContent="Course: "+Student.Course;
+
+        document.getElementById("pgrade").textContent="Grade: "+ Student_Grade;
+
+        document.getElementById("presult").textContent="Result: "+Result;
+
+    }
+    function restart(){
+        document.getElementById("reg_no").value="";
+
+        document.getElementById("marks").value="";
+
+        document.getElementById("pname").textContent="";
+
+        document.getElementById("preg_no").textContent="";
+
+        document.getElementById("psem").textContent="";
+
+        document.getElementById("pcourse").textContent="";
+
+        document.getElementById("pgrade").textContent="";
+
+        document.getElementById("presult").textContent="";
+
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>City Hospital</title>
+        <link rel="stylesheet" href="./Hospital.css">
+    </head>
+    <body>
+        <div class="nav">
+            <h1>City Hospital</h1>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Gallery</li>
+            <li>Contact</li>
+        </div>
+        <div class="HeroSection">
+            <h1> We Care For Your Health</h1>
+            <p>24/7 Emergency & Quality Services</p>
+            <button id="butn" onclick="Appointment()">Book Appointment</button>
+        </div>
+        <script>
+            function Appointment(){
+                    alert(" Fill Contact Details");
+                    document.getElementById("btn")
+                }
+        </script>
+        <div class="Ourservices">
+            <h1>Our Services</h1>
+            <div class="ourservice">
+                <p>Emergency Care</p>
+                <p>Surgery</p>
+                <p>Pharmacy</p>
+            </div>
+        </div>
+        <div class="HospitalGallery">
+            <h1>Hospital Gallery</h1>
+            <div class="Gallerys">
+                <img src="./doctor1.jpeg">
+                <img src="./doctor2.jpeg">
+                <img src="./doctor3.jpeg">
+            </div>
+        </div>
+        <div class="Contact-US">
+            <h1>Contact Us</h1>
+            <form>
+                <input id="name" type="text" placeholder="Your Name" required>
+                <input id="email" type="email" placeholder="Email" required>
+                <input class="mesg" type="text" placeholder="Message">
+                <button id="submit" onclick="Message()">Send Message</button>
+            </form>
+        </div>
+        <script>
+        function Message() {
+            if (document.getElementById("name").value == "") 
+            {
+                alert("Please enter name");
+            }else if (document.getElementById("email").value == "") 
+            {
+                alert("Please enter email");
+            }else {
+                alert("Form submitted successfully!");
+                document.getElementById("submit").innerHTML = "Appointment Booked";
+            }
+        }
+        </script>
+        <div class="footer-last-part">
+            <p>@2026 City Hospital | Designed by Student</p>
+        </div>
+
+</body>
+</html>
